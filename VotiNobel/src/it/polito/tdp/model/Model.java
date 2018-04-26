@@ -36,13 +36,13 @@ public class Model {
 
 	private void recursive(int step, List<Esame> parziale, int numeroCrediti) {
 		
-		if( totCrediti(parziale) > numeroCrediti ) {
+		if( totCrediti(parziale) > numeroCrediti ) { //condizione uscita ricorsione
 					
 			return;
 			
 		}
 		
-		if(totCrediti(parziale) == numeroCrediti) {
+		if(totCrediti(parziale) == numeroCrediti) { //condizione trovare soluzione alla ricorsione
 			
 			if( avg(parziale) > bestAvg) {
 				
